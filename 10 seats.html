@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Seating Chart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+    .container {
+      width: 80%;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    .header h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .header p {
+      font-size: 18px;
+      color: #ccc;
+    }
+    .content {
+      padding: 20px;
+    }
+    .content h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      border-top: 1px solid #ddd;
+    }
+    .footer p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .seating-chart {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 10px;
+    }
+    .seat {
+      background-color: #ccc;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+    .seat.selected {
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Seating Chart</h1>
+      <p>Select your seat</p>
+    </div>
+    <div class="content">
+      <h2>Available Seats</h2>
+      <div class="seating-chart">
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+        <div class="seat">7</div>
+        <div class="seat">8</div>
+        <div class="seat">9</div>
+        <div class="seat">10</div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy; 2023 Seating Chart</p>
+    </div>
+  </div>
+</body>
+</html>
